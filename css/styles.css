@@ -117,12 +117,16 @@ header a:hover{
             background-size: cover cover;
             background-position: center;
             background-repeat: no-repeat;
-            height: 500px;
+            height: 400px;
             width: 400px;
         }
-        #porque-nosotros .contenedor{
+        #porque-nosotros#porque-nosotros .contenedor{
             display: flex;
             justify-content: space-evenly;
+        }
+        #porque-nosotros h2, span{
+            text-align: center;
+            padding-top: 50px;
         }
         #porque-nosotros .lista{
             display: flex;
@@ -248,12 +252,19 @@ header a:hover{
 }
 
 /* PORQUE NOSOTTOS */
-#porque-nosotros{
-
-}
 #porque-nosotros .contenedor{
     text-align: center;
-    padding: 150px 12px;
+    padding: 0 12px 150px 12px;
+}
+#porque-nosotros h2{
+    font-size: 3rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+#porque-nosotros span{
+    font-family: 'Dancing Script', cursive;
+    color: blueviolet;
+    font-size: 3.5rem;
 }
 #porque-nosotros ul{
     padding-left: 0;
