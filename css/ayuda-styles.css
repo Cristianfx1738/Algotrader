@@ -180,7 +180,7 @@ footer .contenedor{
         flex-direction: column;
     }
     header nav a{
-        padding: 0.5rem 1rem;
+        padding: 0.2rem 1rem;
     }
 
     #contacto .contenedor{
@@ -188,6 +188,7 @@ footer .contenedor{
     }
     .left{
         height: 250px;
+        width: 300px;
     }
       
 }
