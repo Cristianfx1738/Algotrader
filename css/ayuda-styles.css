@@ -39,6 +39,7 @@ header .logo{
 header nav{
     display: flex;
     text-align: center;
+    padding: 0 30px;
 }    
 header a{
     text-decoration: none;
@@ -76,11 +77,14 @@ header a:hover{
     z-index: -1;
     filter: blur(15px);
 }
-#contacto .contenedor{
-    max-width: 1200px;
+.contact-box{
+    max-width: 850px;
     width: 90vw;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     background-color: rgb(247, 247, 247);
     border-radius: 7px;
 
@@ -183,12 +187,12 @@ footer .contenedor{
         padding: 0.2rem 1rem;
     }
 
-    #contacto .contenedor{
+    .contact-box{
         grid-template-columns: 1fr;
+        
     }
     .left{
         height: 250px;
-        width: 300px;
     }
       
 }
