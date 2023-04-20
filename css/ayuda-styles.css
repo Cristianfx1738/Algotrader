@@ -1,201 +1,190 @@
 /* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 /* font-family: 'Dancing Script', cursive; */
 
 *{
     box-sizing: border-box;
-    
+    margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 body{
-    width: 100%;
-    height: 90vh;
-}
-
-/************** HEADER *************/
-header{
-    background-color: rgb(247, 247, 247);
-}
-header .contenedor{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    min-height: 100vh;
 }
-header .logo a{
-    text-decoration: none;
-    color: blueviolet;
-    font-weight: bold;
-    font-size: 2.8rem;
-    font-family: 'Dancing Script', cursive;
-    margin: 0;
-}
-header .logo{
-    padding: 15px 30px;
-    margin-bottom: 0;
-}
-header nav{
-    display: flex;
-    text-align: center;
-    padding: 0 30px;
-}    
-header a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    padding: 0 12px;
-    font-size: 1.1rem;
-
-}
-header a:hover{
-    color: blueviolet;
-}
-
-/************** CONTACT FORM ***********/
-#contacto{
+.contacto{
     position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: blueviolet;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    width: 100%;
-    padding: 20px 100px;
 }
-#contacto::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(../img/hero1.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    z-index: -1;
-    filter: blur(15px);
-}
-.contact-box{
-    max-width: 850px;
-    width: 90vw;
+.contenedor{
+    width: 90%;
+    height: 550px;
+    max-width: 968px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 10px 15px 20px 0 rgba(0,0,0,.4);
+    overflow: hidden;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: rgb(247, 247, 247);
-    border-radius: 7px;
-
+    z-index: 1000;
 }
 .left{
-    height: 100%;
-    width: 100%;
-    background-image: url(../img/hero1.webp);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    filter: blur(2px);
+    background-color: white;
+}
+.left-title{
+    color: blueviolet;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 2.5rem;
+}
+.img{
+    width: 320px;
+    height: 320px;
+    padding-left: 40px;
+}
+.social-title{
+    font-size: 1rem;
+    color: blueviolet;
+    padding-left: 15px;
+}
+.social-media{
+    display: flex;
+    list-style: none;
+}
+.social-media i{
+    background-color: blueviolet;
+    padding: 7px;
     border-radius: 5px;
+    color: white;
+    transition: .3s;
 }
-.right{
-    margin: 2rem;
+.social-links ul li{
+    padding-left: 15px;
+    font-size: 24px;
+    margin-top: 10px;
 }
-.logo{
-    margin-top: 0;
+.social-media i:hover{
+    background-color: white;
+    color: blueviolet;
 }
 
-h2{
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
 }
-h2 span{
+.right h2{
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 1.5rem;
+}
+.right h2 span{
     font-family: 'Dancing Script', cursive;
-    color: blueviolet;
     font-size: 2rem;
+    font-weight: 600;
 }
-.field{
+.contact-form{
+    padding: 20px;
+}
+.input{
     width: 100%;
-    padding: 0.7rem 1rem;
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-    border: 2px solid rgba(0,0,0, 0);
-    background-color: rgba(230, 230, 230, 0.6);
-    border-radius: 7px;
-    transition: 0.3s;
-    resize: none;
+    padding: 0.7rem 0.5rem;
+    margin-bottom: 15px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 15px;
+
 }
-.field:hover{
-    background-color: rgba(0, 0, 0, 0.1);
-    letter-spacing: 2px;
-}
-.field:focus{
-    background-color: #fff;
-    border: 2px solid rgba(30, 85, 250, 0.47);
+.input::placeholder{
+    color: white;
+    transition: .3s;
 }
 .area{
-    min-height: 150px;
     resize: none;
 }
-.area::placeholder{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.btn{
-    width: 100%;
-    padding: 0.7rem 1rem;
-    background-color: blueviolet;
-    border: none;
-    border-radius: 7px;
-    font-size: 1rem;
-    color: #fff;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: 0.3s;
-    outline: none;
-}
-.btn:hover{
-    background-color: rgb(95, 31, 155);
+.input:hover{
     letter-spacing: 2px;
 }
-
-/****************** FOOTER ********************/
-
-footer{
-    background-color: rgb(247, 247, 247);
+select{
+    transition: .3s;
 }
-footer .contenedor{
+.contact-form select option{
+    background-color: white;
+    color: blueviolet;
+}
+.input:hover select{
+    letter-spacing: 2px;
+}
+.btn{
+    background-color: #fff;
+    color: blueviolet;
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+    width: 40%;
+    font-size: 1rem;
+    text-transform: uppercase;
+    outline: none;
+    border: transparent;
+    transition: .3s;
+}
+.btn:hover{
+    font-weight: 600;
+    letter-spacing: 2px;
+
+}
+
+footer{ 
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 30px 10px;
+    background-color: blueviolet;
+    padding: 15px 10px;
 }
 
-/************** MEDIA QUERIES *************/
-@media (max-width: 880px) {
-    header .contenedor{
-        flex-direction: column;
-    }
-    header nav{
-        flex-direction: column;
-    }
-    header nav a{
-        padding: 0.2rem 1rem;
-    }
-
-    .contact-box{
+@media (max-width: 768px) {
+      .contenedor{
         grid-template-columns: 1fr;
-        
-    }
-    .left{
-        height: 250px;
-    }
-      
+      }
+      .left{
+        display: none;
+      }
+      .btn{
+        width: 100%;
+      }
 }
 
 
-/************** MEDIA QUERIES *************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
